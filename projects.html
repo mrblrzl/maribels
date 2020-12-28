@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Maribel Arzola</title>
+    <link rel="shortcut icon" type="image/png" href="./assests/images/favicon.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Bad+Script&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css"> -->
+    <link rel="stylesheet" type="text/css" href="assests/style.css">
+
+</head>
+
+<body>
+  <header id="header" class="menu-container">
+
+    <!--   Logo -->
+    <div class="logo-box">
+      <h1 id="logo-text"><i style='font-size:24px' class='fas'>&#xf57d;</i></h1>
+    </div>
+    <!--   Logo -->
+  
+    <!--   navbar -->
+    <nav id="navbar">
+      <input class="menu-btn" type="checkbox" id="menu-btn" />
+      <label class="menu-icon" for="menu-btn"><span class="nav-icon"></span></label>
+      <ul class="menu">
+        <!-- <li><a href="#about" class="nav-link">About</a></li> -->
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+    </nav>
+    <!--   navbar -->
+  </header>
+  <!-- header ends -->
+  
+  <!-- <main id="welcome-section" class="container">
+    <section class="hero container">
+      <h1 class="hero-title-primary">Welcome</h1>
+      <p class="hero-title-sub">I am a Web Designer & Developer "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod including Spanish content"</p>
+    </section>
+    
+    <div class="hero-image container">
+      <figure>
+        
+      </figure>
+    </div>
+  
+  </main> -->  <!--Waves Container-->
+  <!-- CSS Waves from goodkatz (https://codepen.io/goodkatz/pen/LYPGxQz) -->
+  <div>
+      <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+    <defs>
+    <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+    </defs>
+    <g class="parallax">
+    <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.7" />
+    <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.5)" />
+    <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.3)" />
+    <use xlink:href="#gentle-wave" x="48" y="7" fill="#fff" />
+    </g>
+    </svg>
+    </div>
+  
+    <!--Waves end-->
+  
+  <section id="projects">
+  
+      <style>
+    
+          /* The grid: Four equal columns that floats next to each other */
+          .column {
+            float: left;
+            width: 33.3%;
+            padding: 10px;
+          }
+          
+          /* Style the images inside the grid */
+          .column img {
+            opacity: 0.8; 
+            cursor: pointer; 
+          }
+          
+          .column img:hover {
+            opacity: 1;
+          }
+          
+          /* Clear floats after the columns */
+          .row:after {
+            content: "";
+            display: table;
+            clear: both;
+          }
+          
+          /* The expanding image container */
+          .contain {
+            position: relative;
+            display: none;
+          }
+          
+          /* Expanding image text */
+          #imgtext {
+            position: absolute;
+            bottom: 15px;
+            left: 15px;
+            color: white;
+            font-size: 20px;
+          }
+          
+          /* Closable button inside the expanded image */
+          .closebtn {
+            position: absolute;
+            top: 10px;
+            right: 15px;
+            color: white;
+            font-size: 35px;
+            cursor: pointer;
+          }
+          </style>
+          </head>
+          <body>
+          
+                  <header id="header" class="menu-container">
+                        
+                          <!--   navbar -->
+                          <nav id="navbar">
+                            <input class="menu-btn" type="checkbox" id="menu-btn" />
+                            <label class="menu-icon" for="menu-btn"><span class="nav-icon"></span></label>
+                            <ul class="menu">
+                              <!-- <li><a href="#about" class="nav-link">About</a></li> -->
+                              <li><a href="index.html" class="nav-link">Home</a></li>
+                              <li><a href="#contact" class="nav-link">Contact</a></li>
+                            </ul>
+                          </nav>
+                          <!--   navbar -->
+                        </header>
+                        <!-- header ends -->
+          
+          <div style="text-align:center">
+            <h1>Click on an image; scroll to view expanded imaage:</h1>
+          </div>
+          
+          <!-- The three columns -->
+          <div class="row">
+            <div class="column">
+              <img src="assests/images/grad.jpg" alt="Grad" style="width:100%" onclick="myFunction(this);">
+            </div>
+            <div class="column">
+              <img src="assests/images/bautizo.jpg" alt="Baptism" style="width:100%" onclick="myFunction(this);">
+            </div>
+            <div class="column">
+              <img src="assests/images/birthday.png" alt="Beach" style="width:100%" onclick="myFunction(this);">
+            </div>
+          </div>
+          
+          <!-- The three columns -->
+          <div class="row">
+            <div class="column">
+              <img src="assests/images/bride.png" alt="Shirt" style="width:100%" onclick="myFunction(this);">
+            </div>
+            <div class="column">
+              <img src="assests/images/bridesmaids.png" alt="Shirt" style="width:100%" onclick="myFunction(this);">
+            </div>
+            <div class="column">
+              <img src="assests/images/vote.jpg" alt="Shirt" style="width:100%" onclick="myFunction(this);">
+            </div>
+          </div>
+          
+          <!-- The three columns -->
+          <div class="row">
+                  <div class="column">
+                    <video controls alt="" style="width:100%" onclick="myFunction(this);" >
+                          <source src="assests/images/salestory.mp4"
+                                  type="video/mp4" style="width:100%">
+                      </video>
+                  </div>
+                  <div class="column">
+                    <img src="assests/images/quizme.png" alt="Quiz" style="width:100%" onclick="myFunction(this);">
+                  </div>
+                  <div class="column">
+                          <video controls alt="" style="width:100%" onclick="myFunction(this);" >
+                                <source src="assests/images/coffee.mp4"
+                                        type="video/mp4" style="width:100%">
+                            </video>
+                        </div>
+                </div>
+          
+          <!-- The three columns -->
+          
+          <div class="row">
+            <div class="column">
+              <img src="assests/images/burgers.JPG" alt="" style="width:100%" onclick="myFunction(this);">
+            </div>
+            <div class="column">
+              <img src="assests/images/podcover.png" alt="" style="width:100%" onclick="myFunction(this);">
+            </div>
+            <div class="column">
+              <img src="assests/images/p_codebusters.JPG" alt="" style="width:100%" onclick="myFunction(this);">
+            </div>
+          </div>
+          
+          <div class="contain">
+            <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+            <img id="expandedImg" style="width:100%">
+            <div id="imgtext"></div>
+          </div>
+          
+          <script>
+          function myFunction(imgs) {
+            var expandImg = document.getElementById("expandedImg");
+            var imgText = document.getElementById("imgtext");
+            expandImg.src = imgs.src;
+            imgText.innerHTML = imgs.alt;
+            expandImg.parentElement.style.display = "block";
+          }
+          </script>
+          
+    
+  </section>
+  
+
+  <div class="footer-wrapper">
+    <section class="contact-container">
+      <h2 id="contact" class="contact-title">Let's Connect</h2>
+      <div class="social-container">
+        <ul class="social-icons">
+          
+              <li><a href="https://www.instagram.com/mrblrzl/?hl=en" target="_blank"><i class="fab fa-instagram"> </i></a></li>
+              <li><a href="https://www.pinterest.com/mm1_marzola" target="_blank"><i class="fab fa-pinterest"> </i></a></li>
+              <li><a href="https://github.com/mrblrzl" target="_blank"><i class="fab fa-github-square"></i></a></li>
+              <li><a href="mailto:m.s.arzola@gmail.com"><i class="far fa-envelope" target="_blank"></i></a></li>
+           
+        </ul>
+    </div>
+    </section>
+    </div>
+
+  </section>
+  </div>
+
+ 
+</body>
+</html>
